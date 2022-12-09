@@ -20,9 +20,9 @@ jobs:
         env:
           DOCKERHUB_REPO: ${{ secrets.DOCKERHUB_REPO }}
         run: |
-          docker build -t $DOCKERHUB_REPO:api.v1.0.0  .
+          docker build -t $DOCKERHUB_REPO:app2.v1.0.0  .
       - name: Docker push
         env:
           DOCKERHUB_REPO: ${{ secrets.DOCKERHUB_REPO }}
         run: |
-          docker push $DOCKERHUB_REPO:ap2.v1.0.0
+          docker push $DOCKERHUB_REPO:app2.v1.0.0
